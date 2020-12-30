@@ -1,5 +1,4 @@
-define([],function() {
-    
+
     console.log('Creating a scoreboard...');
     
     // private members
@@ -26,9 +25,7 @@ define([],function() {
         scoresElement.innerHTML = output;
     }
     
-    // return public members
-    return {
-        addResult: addResult,
-        updateScoreboard: updateScoreboard
-    }  
-});
+  
+
+    exports.addResult=addResult;
+    exports.updateScoreboard=updateScoreboard;

@@ -1,5 +1,6 @@
-define(['./player','./scoreboard'],function(player,scoreboard) {
-    
+const player=require('./player.js');
+const scoreboard=require('./scoreboard.js');
+
     // private members
     var factorElement = document.getElementById('factor');
     var problemsPerGame = 3; // set default value
@@ -68,11 +69,8 @@ define(['./player','./scoreboard'],function(player,scoreboard) {
     }
     
     // public members
-    return {
-        printGame: printGame,
-        calculateScore: calculateScore,
-        setProblemCount: setProblemCount,
-        getProblemCount: getProblemCount
-    };
-    
-});
+   exports.printGame=printGame;
+   exports.calculateScore=calculateScore;
+   exports.setProblemCount=setProblemCount;
+   exports.getProblemCount=getProblemCount;
+   
