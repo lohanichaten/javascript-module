@@ -1,6 +1,5 @@
-(function() {
-    
-    console.log('Starting MultiMath with an IIFE');
+define(['./player','./game'],function(player,game) {  
+    console.log('Loaded with requirejs');
     
     // add click handler to the start game button
     document.getElementById('startGame').addEventListener('click', function() {
@@ -16,4 +15,4 @@
     // set the default number of problems
     document.getElementById('problemCount').value = game.getProblemCount();
     
-})();
+});

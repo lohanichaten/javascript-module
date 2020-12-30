@@ -1,4 +1,4 @@
-var Scoreboard = function() {
+define([],function() {
     
     console.log('Creating a scoreboard...');
     
@@ -30,6 +30,5 @@ var Scoreboard = function() {
     return {
         addResult: addResult,
         updateScoreboard: updateScoreboard
-    }
-    
-};
+    }  
+});
